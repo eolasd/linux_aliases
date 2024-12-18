@@ -5,7 +5,7 @@ mkdir -p ~/.personal_config
 
 # Clone your aliases repository if it doesn't exist
 if [ ! -d ~/.personal_config/my-aliases ]; then
-    git clone https://github.com/eolasd/linux-aliases.git ~/.personal_config/my-aliases
+    git clone https://github.com/eolasd/linux_aliases.git ~/.personal_config/my-aliases
 fi
 
 # Check if the source line exists in .bashrc
@@ -35,4 +35,7 @@ alias hg='history | grep '
 EOL
 fi
 
-echo "Alias setup complete! Source your .bashrc or start a new terminal session."
+echo "Alias setup complete! Refreshing bashrc file with `source ~/.bashrc` "
+source ~/.bashrc
+
+echo "Done"
