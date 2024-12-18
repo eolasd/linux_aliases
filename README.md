@@ -15,7 +15,7 @@ This repository contains a setup script and aliases configuration that allows yo
 1. Fork this repository or create a new one
 2. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/eolasd/my-aliases.git
+   git clone https://github.com/eolasd/linux_aliases.git my-aliases
    ```
 3. Run the setup script:
    ```bash
