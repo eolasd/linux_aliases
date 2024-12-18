@@ -51,6 +51,8 @@ alias timestamp='date "+%Y%m%d_%H%M%S"'
 alias myip='curl -s ifconfig.me'
 alias hg='history | grep '
 # Add your custom aliases below this line
+alias caddy-watch='tail -f /var/log/caddy/access.log | jq -r ". | \(.ts) [\(.status)] \(.request.method) \(.request.uri) from \(.request.remote_ip) (\(.duration)s)"'
+alias caddy-errors='grep -E "\"status\":(4|5)[0-9]{2}" /var/log/caddy/access.log | jq -r ". | \(.ts) [\(.status)] \(.request.method) \(.request.uri) from \(.request.remote_ip)"'
 EOL
 fi
 
