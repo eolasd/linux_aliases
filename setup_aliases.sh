@@ -5,7 +5,7 @@ mkdir -p ~/.personal_config
 
 # Clone your aliases repository if it doesn't exist
 if [ ! -d ~/.personal_config/my-aliases ]; then
-    git clone https://github.com/YOUR_USERNAME/my-aliases.git ~/.personal_config/my-aliases
+    git clone https://github.com/eolasd/linux-aliases.git ~/.personal_config/my-aliases
 fi
 
 # Check if the source line exists in .bashrc
@@ -29,6 +29,7 @@ alias gl='git log'
 alias update='sudo apt update && sudo apt upgrade -y'
 alias timestamp='date "+%Y%m%d_%H%M%S"'
 alias myip='curl -s ifconfig.me'
+alias hg='history | grep '
 
 # Add your custom aliases below this line
 EOL
